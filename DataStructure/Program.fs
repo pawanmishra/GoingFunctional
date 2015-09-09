@@ -8,6 +8,7 @@ open MergeSort
 open QuickSort
 open PriorityQueue
 open Graph
+open SymbolGraph
 
 [<EntryPoint>]
 let main argv = 
@@ -26,7 +27,8 @@ let main argv =
 //        let value = pq.DelMax()
 //        printfn "%A" value
 
-    let path = Path.GetFullPath("Graph.txt")
-    ConstructGraph path
+//    let path = Path.GetFullPath("Graph.txt")
+//    ConstructGraph path
+    DegreeOfSeparation
     Console.ReadLine() |> ignore
     0 // return an integer exit code
